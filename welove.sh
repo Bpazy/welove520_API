@@ -1,0 +1,1 @@
+python welove.py >> welove.log &
