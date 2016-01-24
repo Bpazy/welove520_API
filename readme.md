@@ -28,7 +28,7 @@ task_type:
 }
 ```
 <br>
-## Demo(洗澡):
+## Demo(洗澡)[python example](https://github.com/Bpazy/welove520_API/blob/master/welove.py):
 
 Request:
 ```
