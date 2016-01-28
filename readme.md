@@ -1,4 +1,14 @@
-## API分析
+# API分析
+
+##我们的家
+```
+"access_token": "56294XXXX343086-27152XXXXXa5746dd"(抓包获取，登录之后保持不变)
+"task_type": "7", (不同动作有不同的值)
+"love_space_id": "844424932415867",(每一个家庭有唯一的值) 
+"sig": "WXjA+ujXTVKUfv9lfVMGo6pxbis=" (抓包获取，每个动作有不同的值，重新登录会变更因此需要重新抓包)
+```
+
+##详细API
 ```
 Host: api.welove520.com
 /v1/game/house/info  房间物品的详细信息
@@ -8,6 +18,7 @@ Host: api.welove520.com
 /v1/geo/location  设置位置
 /v1/geo/weathers  获取双方天气，基于location发送的数据获取
 
+app_key: ac5f3XXXXa4344c4
 love_space_id  房间唯一编号
 access_token: 56294XXXX343086-27152XXXXXa5746dd  固定值
 sig: 
