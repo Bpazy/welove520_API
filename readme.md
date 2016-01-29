@@ -15,8 +15,8 @@ Host: api.welove520.com
 /v1/game/house/tips  自己的信息
 /v1/game/house/info  点击随机的时候，返回JSON，love_space_id为房间编码
 /v1/game/house/task  执行各种动作
-/v1/geo/location  设置位置
-/v1/geo/weathers  获取双方天气，基于location发送的数据获取
+/v1/geo/location     设置位置
+/v1/geo/weathers     获取双方天气，基于location发送的数据获取
 
 app_key: ac5f3XXXXa4344c4
 love_space_id  房间唯一编号
