@@ -27,7 +27,7 @@ public class PostContentHandler implements Runnable {
             }
             boolean newFile = file.createNewFile();
             if (newFile) {
-                logger.warn("等待数据中...");
+                logger.info("创建" + fileName + "成功");
             } else {
                 throw new IOException("创建" + fileName + "失败");
             }
@@ -54,7 +54,8 @@ public class PostContentHandler implements Runnable {
         }
     }
 
-    public String handleTomlMessage(String accessToken, String loveSpaceId, String taskType, String sig) throws IOException {
+    public String handleTomlMessage(String accessToken, String loveSpaceId, String taskType, String sig) throws
+            IOException {
         Map<String, Object> infoMap = handlerInfo(accessToken, loveSpaceId, taskType, sig);
         String kind;
         switch (Integer.parseInt(taskType)) {
