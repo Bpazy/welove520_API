@@ -1,2 +1,6 @@
 /welove-bak.py
 /welove.log
+/.gradle
+.idea/
+build/
+welove.conf
