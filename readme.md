@@ -1,6 +1,6 @@
 
+### 下载并使用
 ```
-使用方法
 git clone https://github.com/Bpazy/welove520_API
 cd welove520_API
 gradlew run
