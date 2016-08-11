@@ -2,6 +2,7 @@ group 'xyz.bpazy'
 version '1.0'
 
 apply plugin: 'java'
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
 
@@ -15,3 +16,9 @@ dependencies {
     compile 'org.littleshoot:littleproxy:1.1.0'
     compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.21'
 }
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+mainClassName = "Main"
