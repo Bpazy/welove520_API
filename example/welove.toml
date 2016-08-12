@@ -1,0 +1,29 @@
+[bath] #洗澡
+"access_token" = "562949961343086-24c48b1a01a674429"
+"task_type" = "6"
+"love_space_id" = "844424932415867"
+"sig" = "qh9DvPRrF6tt5BK80FLBY+l3mBQ="
+
+[rest] #休息
+"access_token" = "562949961343086-24c48b1a01a674429"
+"task_type" = "7"
+"love_space_id" = "844424932415867"
+"sig" = "HsK2ME/AQTEFRuLvTIXBEOy/Mc8="
+
+[eat] #吃饭
+"access_token" = "562949961343086-24c48b1a01a674429"
+"task_type" = "4"
+"love_space_id" = "844424932415867"
+"sig" = "As1MsLvJupS5QDsXAtRdySofiNA="
+
+[sleep] #睡觉
+"access_token" = "562949961343086-24c48b1a01a674429"
+"task_type" = "5"
+"love_space_id" = "844424932415867"
+"sig" = "mJJYjw2j2/tuBIPVLyiy/fIl0ug="
+
+[mua] #互动
+"access_token" = "562949961343086-24c48b1a01a674429"
+"task_type" = "13"
+"love_space_id" = "844424932415867"
+"sig" = "N/P1Ax8W3ksVyDcHKKqOze1oVZc="
