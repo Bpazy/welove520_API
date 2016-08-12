@@ -3,4 +3,4 @@
 /.gradle
 .idea/
 build/
-welove.conf
+welove.toml
