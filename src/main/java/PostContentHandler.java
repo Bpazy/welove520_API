@@ -60,19 +60,19 @@ public class PostContentHandler implements Runnable {
         String kind;
         switch (Integer.parseInt(taskType)) {
             case 7:
-                kind = "xiuxi";
+                kind = "rest";
                 break;
             case 6:
-                kind = "xizao";
+                kind = "bath";
                 break;
             case 4:
-                kind = "chifan";
+                kind = "eat";
                 break;
             case 5:
-                kind = "shuijiao";
+                kind = "sleep";
                 break;
             case 13:
-                kind = "hudong";
+                kind = "mua";
                 break;
             default:
                 kind = null;
