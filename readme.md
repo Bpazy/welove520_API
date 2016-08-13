@@ -7,7 +7,7 @@ gradlew run
 ```
 微爱请求关键信息在执行后保存在根目录welove.conf中
 
-由Python发送post请求 [Example](https://github.com/Bpazy/welove520_API/blob/master/example/welove.py)
+由Python发送post请求 [Example](https://github.com/Bpazy/welove520_API/blob/master/example/post.py)
 
 添加定时任务每`30`分钟执行一次
 
