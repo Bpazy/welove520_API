@@ -1,11 +1,12 @@
 
-### 下载并使用
+### ~~下载并使用~~ 
+(推荐使用Go版本 [点击此处](https://github.com/Bpazy/welove520-go))
 ```
 git clone https://github.com/Bpazy/welove520_API
 cd welove520_API
 gradlew run
 ```
-微爱请求关键信息在执行后保存在根目录welove.conf中
+微爱请求关键信息在执行后保存在根目录welove.toml中
 
 由Python发送post请求 [Example](https://github.com/Bpazy/welove520_API/blob/master/example/post.py)
 
@@ -13,4 +14,4 @@ gradlew run
 
 `echo "*/30 * * * * python welove.py" >> /var/spool/cron/root`
 
-[微爱API接口](https://github.com/Bpazy/welove520_API/blob/master/example/API.md)
+微爱API接口 [点击此处](https://github.com/Bpazy/welove520_API/blob/master/example/API.md)

@@ -14,8 +14,8 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 public class WeLoveProxy {
-    public String bindIp;
-    public int port;
+    private String bindIp;
+    int port;
     private Logger logger = LoggerFactory.getLogger(WeLoveProxy.class);
 
     public WeLoveProxy() {
