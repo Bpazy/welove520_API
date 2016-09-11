@@ -74,8 +74,11 @@ public class PostContentHandler implements Runnable {
             case 13:
                 kind = "mua";
                 break;
+            case 1:
+                kind = "home";
+                break;
             default:
-                kind = null;
+                kind = "unknown kind, please report a bug";
         }
         Map<String, Map> map = new HashMap<>();
         map.put(kind, infoMap);

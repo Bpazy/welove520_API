@@ -27,3 +27,9 @@
 "task_type" = "13"
 "love_space_id" = "844424932415867"
 "sig" = "N/P1Ax8W3ksVyDcHKKqOze1oVZc="
+
+[home] #回家
+"access_token" = "562949961343086-24c48b1a01a674429"
+"task_type" = "1"
+"love_space_id" = "844424932415867"
+"sig" = "N/P1Ax8W3ksVyDcHKKqOze1oVZc="
