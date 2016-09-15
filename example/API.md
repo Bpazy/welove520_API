@@ -1,6 +1,6 @@
 # API分析
 
-1. ###详细API
+### 1. 详细API
 ```
 Host: api.welove520.com
 /v1/game/house/info  房间物品的详细信息
@@ -11,7 +11,7 @@ Host: api.welove520.com
 /v1/geo/weathers     获取双方天气，基于location发送的数据获取
 ```
 
-2. ###我们的家
+### 2. 我们的家
 ```
 "access_token": "56294XXXX343086-27152XXXXXa5746dd"(抓包获取，登录之后保持不变)
 "task_type": "7", (不同动作有不同的值)
@@ -38,7 +38,7 @@ task_type:
     互动: 11
 }
 ```
-3. ###爱情树
+### 3. 爱情树
 ```
 获取爱情树信息：
 http://api.welove520.com/v1/game/tree/getInfo?access_token=562949961313211-2cxxxxx7e299a0997xxx0&app_key=ac5XXXXXa4344c4&screen_type=102&tree_version=30&sig=XLqfKUjNrU0PlpKeFOA4SwroVRs=
