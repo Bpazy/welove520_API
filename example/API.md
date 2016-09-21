@@ -26,14 +26,7 @@ Host: api.welove520.com
 app_key: ac5f3XXXXa4344c4
 love_space_id  房间唯一编号
 access_token: 56294XXXX343086-27152XXXXXa5746dd  固定值
-sig(每次登陆生成新的值): 
-{    
-    洗澡: "Jz8sL8eV2znw0p9abpgyJjGhgPI=",
-    吃饭: "lU/v4QdYZe8b3IV5R0+fPNreBu0=",
-    休息: "WXjA+ujXTVKUfv9lfVMGo6pxbis=",
-    睡觉: "3bKsFw8msyDuXiHJSPVsTH5CSnc=",
-    互动: "5EAfe5e0ZVx4V1vrZLySGe6/Mo0="
-}
+sig: Jz8sL8eV2znw0p9abpgyJjGhgPI=
 task_type: 
 {
     休息: 7,
