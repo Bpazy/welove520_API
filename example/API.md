@@ -16,7 +16,7 @@ Host: api.welove520.com
 "access_token": "56294XXXX343086-27152XXXXXa5746dd"(抓包获取，登录之后保持不变)
 "task_type": "7", (不同动作有不同的值)
 "love_space_id": "844424932415867",(每一个家庭有唯一的值) 
-"sig": "WXjA+ujXTVKUfv9lfVMGo6pxbis=" (抓包获取，每个动作有不同的值，重新登录会变更因此需要重新抓包)
+"sig": "WXjA+ujXTVKUfv9lfVMGo6pxbis=" (加密方式在http://blog.csdn.net/hanziyuan08/article/details/52606908取得)
 
 app_key: ac5f3XXXXa4344c4
 love_space_id  房间唯一编号
