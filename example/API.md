@@ -11,12 +11,17 @@ Host: api.welove520.com
 /v1/geo/weathers     获取双方天气，基于location发送的数据获取
 ```
 
+`access_token`: `56294XXXX343086-27152XXXXXa5746dd`(抓包获取，登录之后保持不变)
+
+`sig`: `WXjA+ujXTVKUfv9lfVMGo6pxbis=` (**加密字段**)
+
+**加密方式**:`{GET|POST}&{url}&{content}`并且`url`和`content`都是经过`Base64`编码，
+`POST`、`url` 都是固定的，`content`则是请求的信息出除去`sig`字段，对这一构造得到的字符串进行`HmacSHA1`加密之后再进行`Base64`编码就是请求中需要的`sig`了[查看详细](http://blog.csdn.net/hanziyuan08/article/details/52606908)
+
 ### 2. 我们的家
 ```
-"access_token": "56294XXXX343086-27152XXXXXa5746dd"(抓包获取，登录之后保持不变)
 "task_type": "7", (不同动作有不同的值)
 "love_space_id": "844424932415867",(每一个家庭有唯一的值) 
-"sig": "WXjA+ujXTVKUfv9lfVMGo6pxbis=" (加密方式在http://blog.csdn.net/hanziyuan08/article/details/52606908取得)
 
 app_key: ac5f3XXXXa4344c4
 love_space_id  房间唯一编号
@@ -69,69 +74,11 @@ task_type:
                                 "status": 1,
                                 "goods_id": 50600001
                             },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50500017
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50400001
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50300001
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50200006
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50100002
-                            }
+                            ...
                         ],
                         "user_id": "562949973509257"
                     },
-                    {
-                        "face": [
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50600001
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50500017
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50400002
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50300001
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50200006
-                            },
-                            {
-                                "color": 0,
-                                "status": 1,
-                                "goods_id": 50100002
-                            }
-                        ],
-                        "user_id": "562949973509232"
-                    }
+                    ...
                 ],
                 "pay_old_goods": 0,
                 "cur_house_num": 0,
@@ -141,11 +88,7 @@ task_type:
                         "owner_id": "562949973509257",
                         "medal_id": 1
                     },
-                    {
-                        "level": 2,
-                        "owner_id": "562949973509232",
-                        "medal_id": 2
-                    }
+                    ...
                 ],
                 "msg_type": 30,
                 "fashions": [
@@ -157,44 +100,11 @@ task_type:
                                 "goods_id": 20300031,
                                 "wear": 1
                             },
-                            {
-                                "id": 459318,
-                                "count": 1,
-                                "goods_id": 20200031,
-                                "wear": 1
-                            },
-                            {
-                                "id": 459316,
-                                "count": 1,
-                                "goods_id": 20100132,
-                                "wear": 1
-                            }
+                            ...
                         ],
                         "user_id": "562949973509257"
                     },
-                    {
-                        "fashion": [
-                            {
-                                "id": 455968,
-                                "count": 1,
-                                "goods_id": 20300028,
-                                "wear": 1
-                            },
-                            {
-                                "id": 455967,
-                                "count": 1,
-                                "goods_id": 20200029,
-                                "wear": 1
-                            },
-                            {
-                                "id": 455966,
-                                "count": 1,
-                                "goods_id": 20100133,
-                                "wear": 1
-                            }
-                        ],
-                        "user_id": "562949973509232"
-                    }
+                    ...
                 ],
                 "house": {
                     "estate_count": 1,
@@ -220,150 +130,7 @@ task_type:
                         "parent_id": 0,
                         "x": 15
                     },
-                    {
-                        "id": 2285257,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 11100077,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 0,
-                        "parent_id": 2248083,
-                        "x": 1
-                    },
-                    {
-                        "id": 2282506,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 11500029,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 0,
-                        "parent_id": 0,
-                        "x": 2
-                    },
-                    {
-                        "id": 2282505,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 270,
-                        "goods_id": 11400025,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 6,
-                        "parent_id": 0,
-                        "x": 0
-                    },
-                    {
-                        "id": 2249416,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 11600107,
-                        "z": 1,
-                        "house_num": 0,
-                        "y": 0,
-                        "parent_id": 0,
-                        "x": 10
-                    },
-                    {
-                        "id": 2248827,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 10500113,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 16,
-                        "parent_id": 0,
-                        "x": 0
-                    },
-                    {
-                        "id": 2248093,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 11300019,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 0,
-                        "parent_id": 0,
-                        "x": 0
-                    },
-                    {
-                        "id": 2248090,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 11200004,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 0,
-                        "parent_id": 0,
-                        "x": 0
-                    },
-                    {
-                        "id": 2248086,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 11900107,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 3,
-                        "parent_id": 0,
-                        "x": 12
-                    },
-                    {
-                        "id": 2248083,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 10100139,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 5,
-                        "parent_id": 0,
-                        "x": 11
-                    },
-                    {
-                        "id": 2248079,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 270,
-                        "goods_id": 10600075,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 16,
-                        "parent_id": 0,
-                        "x": 14
-                    },
-                    {
-                        "id": 2248077,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 10400040,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 0,
-                        "parent_id": 0,
-                        "x": 6
-                    },
-                    {
-                        "id": 2231114,
-                        "decorate": 1,
-                        "status": 1,
-                        "rotation": 0,
-                        "goods_id": 11100001,
-                        "z": 0,
-                        "house_num": 0,
-                        "y": 1,
-                        "parent_id": 2248083,
-                        "x": 0
-                    }
+                    ...
                 ],
                 "game_version": 0
             }
@@ -422,26 +189,7 @@ task_type:
             "position": 4,
             "goods_id": 101
         },
-        {
-            "position": 3,
-            "goods_id": 102
-        },
-        {
-            "position": 2,
-            "goods_id": 115
-        },
-        {
-            "position": 1,
-            "goods_id": 116
-        },
-        {
-            "position": 1001,
-            "goods_id": 117
-        },
-        {
-            "position": 1000,
-            "goods_id": 118
-        }
+        ...
     ],
     "tree_id": 844424932415867,
     "growth": 24635
@@ -513,54 +261,7 @@ http://api.welove520.com/v1/game/tree/records?access_token=562949961313211-2cxxx
             "complete": 0,
             "date": "2016-09-15"
         },
-        {
-            "lasting_days": 274,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-14"
-        },
-        {
-            "lasting_days": 273,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-13"
-        },
-        {
-            "lasting_days": 272,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-12"
-        },
-        {
-            "lasting_days": 271,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-11"
-        },
-        {
-            "lasting_days": 270,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-10"
-        },
-        {
-            "lasting_days": 269,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-09"
-        },
-        {
-            "lasting_days": 268,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-08"
-        },
-        {
-            "lasting_days": 267,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-07"
-        }
+        ...
     ],
     "low_price_total": 1,
     "records": [
@@ -570,54 +271,7 @@ http://api.welove520.com/v1/game/tree/records?access_token=562949961313211-2cxxx
             "complete": 1,
             "date": "2016-09-15"
         },
-        {
-            "lasting_days": 914,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-14"
-        },
-        {
-            "lasting_days": 913,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-13"
-        },
-        {
-            "lasting_days": 912,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-12"
-        },
-        {
-            "lasting_days": 911,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-11"
-        },
-        {
-            "lasting_days": 910,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-10"
-        },
-        {
-            "lasting_days": 909,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-09"
-        },
-        {
-            "lasting_days": 908,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-08"
-        },
-        {
-            "lasting_days": 907,
-            "invalid": 0,
-            "complete": 1,
-            "date": "2016-09-07"
-        }
+        ...
     ],
     "lover_lasting_days": 274,
     "tree_id": 844424932415867
