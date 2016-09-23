@@ -14,4 +14,4 @@ gradlew run
 
 `echo "*/30 * * * * python welove.py" >> /var/spool/cron/root`
 
-微爱API接口 [点击此处](https://github.com/Bpazy/welove520_API/blob/master/example/API.md)
+微爱API接口 [点击此处](https://github.com/Bpazy/welove520/blob/master/API.md)
